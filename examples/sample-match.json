@@ -1,0 +1,66 @@
+{
+  "matchId": "demo_match_001",
+  "players": ["player_001", "player_002"],
+  "gameType": "texas_holdem",
+  "stake": {
+    "player_001": 1.0,
+    "player_002": 1.0,
+    "total": 2.0
+  },
+  "rake": {
+    "rate": 0.035,
+    "amount": 0.07,
+    "winnerPayout": 1.93
+  },
+  "timestamp": "2024-01-15T10:30:00Z",
+  "duration": 180,
+  "status": "completed",
+  "winner": "player_001",
+  "transactions": {
+    "deposits": [
+      {
+        "player": "player_001",
+        "amount": 1.0,
+        "txHash": "2x7Y8e9Zf1Gh2Ij3Kl4Mn5Op6Qr7St8Uv9WxYz",
+        "timestamp": "2024-01-15T10:29:45Z"
+      },
+      {
+        "player": "player_002",
+        "amount": 1.0,
+        "txHash": "9Wx8Uv7St6Qr5Op4Mn3Kl2Ij1Gh0Zf9Y8e7X6",
+        "timestamp": "2024-01-15T10:29:47Z"
+      }
+    ],
+    "payout": {
+      "player": "player_001",
+      "amount": 1.93,
+      "txHash": "Ab3Cd4Ef5Gh6Ij7Kl8Mn9Op0Qr1St2Uv3Wx4Yz",
+      "timestamp": "2024-01-15T10:33:12Z"
+    },
+    "rake": {
+      "amount": 0.07,
+      "txHash": "Yz4Wx3Uv2St1Qr0Op9Mn8Kl7Ij6Gh5Ef4Cd3Ab",
+      "timestamp": "2024-01-15T10:33:15Z"
+    }
+  },
+  "escrow": {
+    "lockId": "escrow_001",
+    "lockTime": "2024-01-15T10:30:00Z",
+    "releaseTime": "2024-01-15T10:33:00Z",
+    "status": "released"
+  },
+  "fairPlay": {
+    "latency": {
+      "player_001": { "average": 45, "max": 67, "jitter": 3 },
+      "player_002": { "average": 52, "max": 78, "jitter": 5 }
+    },
+    "connectionQuality": {
+      "player_001": "excellent",
+      "player_002": "good"
+    },
+    "antiCheat": {
+      "flags": [],
+      "riskScore": { "player_001": 0.05, "player_002": 0.08 }
+    }
+  }
+}
